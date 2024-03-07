@@ -1,71 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Webpage</title>
-    <style>
-        /* Style for the popup overlay */
-        #popup-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            z-index: 9999;
-        }
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<style>
+    .container {
+        background-color: #016064;
+    }
 
-        /* Style for the popup content */
-        #popup-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: #fff;
-        }
+    p {
+        text-align: center;
+    }
+</style>
 
-        /* Style for the close button */
-        #close-button {
-            color: #fff;
-            font-size: 24px;
-            cursor: pointer;
-        }
-
-        /* Style for the video container */
-        #video-container {
-            width: 80%; /* Adjust the size as needed */
-            margin: 0 auto;
-        }
-
-        /* Responsive video styling */
-        #video-container video {
-            width: 100%;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
-
-<!-- Popup overlay with content -->
-<div id="popup-overlay">
-    <div id="popup-content">
-        <div id="video-container">
-            <video autoplay controls>
-                <source src="images/video.mp4" type="video/mp4">
-                <!-- Add additional source elements for different video formats if needed -->
-            </video>
+<body onload="load()">
+    <p>
+    <div class="d-flex justify-content-center fs-1 fw-bold ">Welcome To Tutorials Point</div>
+    <div class="d-flex justify-content-center fs-1 fw-bold " style="color: #016064;">Animation Counter</div>
+    </p>
+    <p>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <p id='0101' class="fs-2 text-light">0</p>
+                <p class="text-light">Site visits</p>
+            </div>
+            <div class="col-sm">
+                <p id='0102' class="fs-2 text-light">876</p>
+                <p class="text-light">Members signed</p>
+            </div>
+            <div class="col-sm">
+                <p class="fs-2 text-light"><span id='0103'>12</span>%</p>
+                <p class="text-light align-content-center">Average complain rate</p>
+            </div>
         </div>
-        <span id="close-button" onclick="closePopup()">×</span>
     </div>
-</div>
+    </p>
+    <script>
+        function animate(obj, initVal, lastVal, duration) {
+            let startTime = null;
 
-<script>
-    // Function to open the popup
-    
-</script>
+            //get the current timestamp and assign it to the currentTime variable
+            let currentTime = Date.now();
 
+            //pass the current timestamp to the step function
+            const step = (currentTime) => {
+
+                //if the start time is null, assign the current time to startTime
+                if (!startTime) {
+                    startTime = currentTime;
+                }
+
+                //calculate the value to be used in calculating the number to be displayed
+                const progress = Math.min((currentTime - startTime) / duration, 1);
+
+                //calculate what to be displayed using the value gotten above
+                obj.innerHTML = Math.floor(progress * (lastVal - initVal) + initVal);
+
+                //checking to make sure the counter does not exceed the last value (lastVal)
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                } else {
+                    window.cancelAnimationFrame(window.requestAnimationFrame(step));
+                }
+            };
+            //start animating
+            window.requestAnimationFrame(step);
+        }
+        let text1 = document.getElementById('0101');
+        let text2 = document.getElementById('0102');
+        let text3 = document.getElementById('0103');
+        const load = () => {
+            animate(text1, 0, 511, 7000);
+            animate(text2, 0, 232, 7000);
+            animate(text3, 100, 25, 7000);
+        }
+    </script>
 </body>
+
 </html>
