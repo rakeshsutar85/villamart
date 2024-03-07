@@ -1,0 +1,654 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+
+}
+
+
+/* Video popup Start*/
+#popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 9999;
+}
+
+/* Style for the popup content */
+#popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+/* Style for the close button */
+#close-button {
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  color: #fcfafa;
+  font-size: 24px;
+  font-weight: bolder;
+  cursor: pointer;
+  background: transparent;
+}
+
+/* Style for the video container */
+#video-container {
+  width: 80%;
+  /* Adjust the size as needed */
+  margin: 0 auto;
+}
+
+/* Responsive video styling */
+#video-container video {
+  width: 100%;
+  height: auto;
+}
+
+@media(max-width:700px) {
+  #popup-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    z-index: 9999;
+  }
+}
+
+/* Video popup end */
+
+
+/* Header Start */
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://placehold.co/600x400);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 150px;
+
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #0be015;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+
+}
+
+
+
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  align-content: center;
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(184, 183, 183, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  text-align: center;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #3e8e41}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+
+
+
+
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 62px;
+}
+
+.text-box p {
+  margin: 5px 0 40px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  border: 1px solid #0be015;
+  background: #0be015;
+  transition: 1s;
+}
+
+nav .fa {
+  display: none;
+}
+
+@media(max-width:700px) {
+  .text-box h1 {
+    font-size: 20px;
+  }
+
+  .nav-links ul li {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1s;
+
+  }
+
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .nav-links ul {
+    padding: 30px;
+
+  }
+}
+
+/* Header End */
+
+
+
+
+/* About Start*/
+
+.about {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.about-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.about-col img {
+  text-align: center;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.about-col p {
+  padding: 0;
+}
+
+.about-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* About End*/
+
+
+
+/* Supported By start */
+.supported-by {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 600;
+
+}
+
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.flex img {
+  height: 10%;
+  width: 15%;
+  padding: 50px;
+}
+
+/* Supported By End */
+
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Award Start*/
+
+.award {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 0px;
+}
+
+.award-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+
+.award-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.award-col p {
+  padding: 0;
+}
+
+.award-col h3 {
+  margin-top: 16px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+/* Award End*/
+
+
+
+
+/* Testimonials Start*/
+
+.testimonials {
+  width: 80%;
+  margin: auto;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.testimonial-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background: #71cc71;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+
+.testimonial-col img {
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+
+.testimonial-col p {
+  padding: 0;
+}
+
+.testimonial-col h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.testimonial-col .fa-solid {
+  color: #f44336;
+}
+
+.testimonial-col .fa-regular {
+  color: #f44336;
+}
+
+@media(max-width:700px) {
+  .testimonial-col img {
+    margin-left: 09px;
+    margin-right: 15px;
+  }
+}
+
+
+/* Testimonial End */
+
+
+/* Footer Start */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+} */
+
+.container {
+  margin-top: 100px;
+  max-width: 1170px;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #19831e;
+  padding: 10px 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media(max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+/* Footer End */
+
+
+/* -------------------Gallery Start------------------- */
+
+.sub-header {
+  height: 40vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://placehold.co/600x400);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+
+.sub-header h1 {
+  margin-top: 20px;
+}
+
+
+
+.gallery-img p {
+  height: 150px;
+  width: 500px;
+  margin: 100px auto;
+  position: relative;
+}
+
+.gallery-img img {
+  height: 150px;
+  position: absolute;
+  left: 0;
+  offset-path: path('m 0 50 q 50-30 100-30 t 100 30 100 0 100-30 100 30');
+  box-shadow: 1px 1px 3px #0008;
+  transition: transform .4s ease-out, offset-path .4s cubic-bezier(.77, -1.17, .75, .84), box-shadow .3s, z-index .3s;
+  z-index: 0;
+}
+
+.gallery-img img:hover {
+  transform: scale(4);
+  /* on hover, the path gets a bit shorter & flattened & shifted to left/bottom a bit for nicer movement */
+  offset-path: path('m 5 65 q 45-0 90-0 t 90 0 90 0 90-0 90 0');
+  box-shadow: 3px 4px 10px #0006;
+  /* ensures that image gets on top of stack at the start of "popping" animation
+       and gets back at the end of getting back. With smaller value, 2 different transitions would be needed */
+  z-index: 999;
+}
+
+/* 3 images */
+img:nth-last-child(3):first-child {
+  offset-distance: 17%;
+}
+
+img:nth-last-child(2):nth-child(2) {
+  offset-distance: 49%;
+}
+
+img:last-child:nth-child(3) {
+  offset-distance: 80%;
+}
+
+/* 4 images */
+img:nth-last-child(4):first-child {
+  offset-distance: 0%;
+}
+
+img:nth-last-child(3):nth-child(2) {
+  offset-distance: 25%;
+}
+
+img:nth-last-child(2):nth-child(3) {
+  offset-distance: 50%;
+}
+
+img:last-child:nth-child(4) {
+  offset-distance: 100%;
+}
+
+/* 5 images */
+img:nth-last-child(5):first-child {
+  offset-distance: 0%;
+}
+
+img:nth-last-child(4):nth-child(2) {
+  offset-distance: 25%;
+}
+
+img:nth-last-child(3):nth-child(3) {
+  offset-distance: 50%;
+}
+
+img:nth-last-child(2):nth-child(4) {
+  offset-distance: 75%;
+}
+
+img:last-child:nth-child(5) {
+  offset-distance: 100%;
+}
+
+
+
+/* ----------------------Gallery End--------------------- */
+
+
+/* ---------------------------Blog Start------------------- */
+
+.blog {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 500px;
+}
+
+/* ------------------------------Blog End--------------------- */

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width , initial-scale = 1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="index.js"></script>
+	<title>VillaMart.com - Happy Farmers, Healthy Consumers</title>
+	<link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
+
+<body>
+	<!-- Popup overlay with content -->
+	<section>
+		<div id="popup-overlay" onclick="closePopup()">
+			<div id="popup-content">
+				<div id="video-container">
+					<video id="myVideo" autoplay controls>
+						<source src="https://placehold.co/1920x1080.mp4" type="video/mp4">
+						<!-- Add additional source elements for different video formats if needed -->
+					</video>
+				</div>
+				<span id="close-button" onclick="closePopup()">x</span>
+			</div>
+		</div>
+	</section>
+
+	<!-- Header Section -->
+	<section class="header">
+		<nav>
+			<a href="index.html"><img src="images/villamart-logo.png" alt="logo"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li>
+						<div class="dropdown">
+							<a href="about_us.html">ABOUT US</a>
+							<div class="dropdown-content">
+								<a href="#">Know Us</a>
+								<a href="#">Our Team</a>
+								<a href="#">Our Partners</a>
+							</div>
+						</div>
+					</li>
+					<li><a href="franchise.html">FRANCHISE</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="buy.html">BUY</a></li>
+					<li><a href="career.html">CAREER</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+
+		<div class="text-box">
+			<h1>VillaMart</h1>
+			<p>
+				Happy Farmers, Healthy Consumers
+			</p>
+			<a href="" class="hero-btn">Contact Us</a>
+		</div>
+	</section>
+
+
+	<!-- ----------------------------About Us Start------------------------ -->
+
+	<section class="about">
+		<h1>About VillaMart</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero aliquam possimus dignissimos,
+			saepe, aspernatur et non nam itaque, rem incidunt. Quasi voluptatibus a in quod omnis officiis similique.
+			Voluptas?</p>
+
+		<div class="row">
+			<div class="about-col">
+				<img src="https://placehold.co/50x50">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum deleniti nesciunt mollitia quasi?</p>
+			</div>
+			<div class="about-col">
+				<img src="https://placehold.co/50x50">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum deleniti nesciunt mollitia quasi?</p>
+			</div>
+			<div class="about-col">
+				<img src="https://placehold.co/50x50">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum deleniti nesciunt mollitia quasi?</p>
+			</div>
+		</div>
+
+	</section>
+
+
+	<!-- --------------------------------About Us End--------------------------- -->
+
+	<!-- -----------------------Supported By Start----------------------- -->
+
+	<section class="supported-by">
+		<h1>Supported by</h1>
+		<marquee>
+			<div class="flex">
+				<img src="https://placehold.co/400" alt="birac">
+				<img src="https://placehold.co/400" alt="cttc">
+				<img src="https://placehold.co/400" alt="kiit">
+				<img src="https://placehold.co/400" alt="sbi">
+				<img src="https://placehold.co/400" alt="siic">
+				<img src="https://placehold.co/400" alt="Startup India">
+				<img src="https://placehold.co/400" alt="Startup Odisha">
+				<img src="https://placehold.co/400" alt="TATA">
+			</div>
+		</marquee>
+
+	</section>
+
+	<!-- ------------------------------Supported by End------------------------------ -->
+
+	<!-- ----------------------------------Award and Recognizatio Start------------------------- -->
+
+	<section class="award">
+		<h1>Award & Recognition</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero aliquam possimus dignissimos,
+			saepe, aspernatur et non nam itaque, rem incidunt. Quasi voluptatibus a in quod omnis officiis similique.
+			Voluptas?</p>
+
+		<div class="row">
+			<div class="award-col">
+				<img src="https://placehold.co/600x400">
+				<h3>Finalist at National Startup Award 2021</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum deleniti nesciunt mollitia quasi? Unde
+					illo recusandae aperiam? Cumque, modi. Delectus non nemo voluptatum enim expedita accusantium fuga?
+					Quam, eaque voluptatem.</p>
+			</div>
+			<div class="award-col">
+				<img src="https://placehold.co/600x400">
+				<h3>Future Food Fellowship</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum deleniti nesciunt mollitia quasi? Unde
+					illo recusandae aperiam? Cumque, modi. Delectus non nemo voluptatum enim expedita accusantium fuga?
+					Quam, eaque voluptatem.</p>
+			</div>
+			<div class="award-col">
+				<img src="https://placehold.co/600x400">
+				<h3>TATA Social Enterprise Challenge 2021</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum deleniti nesciunt mollitia quasi? Unde
+					illo recusandae aperiam? Cumque, modi. Delectus non nemo voluptatum enim expedita accusantium fuga?
+					Quam, eaque voluptatem.</p>
+			</div>
+		</div>
+
+	</section>
+	<!-- ----------------------------------Award and Recognizatio End------------------------- -->
+
+	<!-- ---------------------------------Testimonials Start -------------------------- -->
+	<section class="testimonials">
+		<h1>What People Says</h1>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, id inventore ea assumenda voluptatibus
+			impedit, ipsa fuga debitis sit possimus, quasi alias error neque molestiae veniam corporis modi dolor
+			dolorem!</p>
+		<div class="row">
+			<div class="testimonial-col">
+				<img src="https://placehold.co/50x50" alt="user1">
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, consectetur! Labore, libero animi
+						omnis neque consequatur incidunt. Cumque aliquid nulla dolor incidunt reiciendis! Accusamus
+						labore eos enim dolorum voluptatibus pariatur.</p>
+					<h3>Person Name</h3>
+					<h6>Farmer</h6>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-regular fa-star"></i>
+				</div>
+			</div>
+			<div class="testimonial-col">
+				<img src="https://placehold.co/50x50" alt="user2">
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, consectetur! Labore, libero animi
+						omnis neque consequatur incidunt. Cumque aliquid nulla dolor incidunt reiciendis! Accusamus
+						labore eos enim dolorum voluptatibus pariatur.</p>
+					<h3>Person Name</h3>
+					<h6>Customer</h6>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-regular fa-star-half"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- <--------------------Footer Start---------------------------- -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col">
+					<h4>company</h4>
+					<ul>
+						<li><a href="#">about us</a></li>
+						<li><a href="#">career</a></li>
+						<li><a href="#">privacy policy</a></li>
+						<li><a href="#">franchise</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>get help</h4>
+					<ul>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">buy</a></li>
+						<li><a href="#">contact us</a></li>
+						<li><a href="#">blog</a></li>
+						<li><a href="#">business model</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>online</h4>
+					<ul>
+						<li><a href="#">people</a></li>
+						<li><a href="#">farmers</a></li>
+						<li><a href="#">shop</a></li>
+
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>follow us</h4>
+					<div class="social-links">
+						<a href="https://www.facebook.com/villamartindia/"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://twitter.com/villamartindia"><i class="fab fa-twitter"></i></a>
+						<a href="https://www.instagram.com/villamart.india/"><i class="fab fa-instagram"></i></a>
+						<a href="https://in.linkedin.com/company/villamartindia"><i class="fab fa-linkedin-in"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- ------------------------------Footer End------------------------ -->
+
+</body>
+
+</html>
