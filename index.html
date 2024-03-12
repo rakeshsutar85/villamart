@@ -30,34 +30,74 @@
 		</div>
 	</section>
 
-	<!-- Header Section -->
-	<section class="header">
+	<div style="background: #014017; height: 80px; position: sticky; top: 0; z-index: 100;">
 		<nav>
 			<a href="index.html"><img src="images/villamart-logo.png" alt="logo"></a>
 			<div class="nav-links" id="navLinks">
 				<i class="fa fa-times" onclick="hideMenu()"></i>
 				<ul>
-					<li><a href="index.html">HOME</a></li>
+					<li>
+						<a href="index.html">HOME</a>
+					</li>
 					<li>
 						<div class="dropdown">
 							<a>COMPANY</a>
 							<div class="dropdown-content">
-								<a href="about_us.html">About</a>
+								<a href="about.html">About</a>
 								<a href="team.html">Team</a>
-								<a href="">Partners</a>
+								<a href="company journey.html">Journey</a>
+								<a href="media.html">Media</a>
+								<a href="business_model.html">Business Model</a>
+								<a href="blog.html">Blog</a>
 							</div>
 						</div>
 					</li>
-					<li><a href="franchise.html">FRANCHISE</a></li>
-					<li><a href="blog.html">BLOG</a></li>
-					<li><a href="gallery.html">GALLERY</a></li>
-					<li><a href="buy.html">BUY</a></li>
-					<li><a href="career.html">CAREER</a></li>
-					<li><a href="contact.html">CONTACT</a></li>
+					<li>
+						<a href="franchise.html">FRANCHISE MODEL</a>
+					</li>
+					<li>
+						<a href="https://www.villamart.in/"target="_blank">ONLINE ORDER</a>
+					</li>
+					<!-- <li><a href="gallery.html">GALLERY</a></li> -->
+					<li>
+						<a href="contact.html">CONTACT US</a>
+					</li>
+					<!-- <li><a href="career.html">CAREER</a></li>
+                        					<li><a href="contact.html">CONTACT</a></li> -->
 				</ul>
 			</div>
 			<i class="fa fa-bars" onclick="showMenu()"></i>
 		</nav>
+	</div>
+
+	<!-- Header Section -->
+	<section class="header">
+		<!-- <nav>
+            			<a href="index.html"><img src="images/villamart-logo.png" alt="logo"></a>
+            			<div class="nav-links" id="navLinks">
+            				<i class="fa fa-times" onclick="hideMenu()"></i>
+            				<ul>
+            					<li><a href="index.html">HOME</a></li>
+            					<li>
+            						<div class="dropdown">
+            							<a>COMPANY</a>
+            							<div class="dropdown-content">
+            								<a href="about_us.html">About</a>
+            								<a href="team.html">Team</a>
+            								<a href="">Partners</a>
+            							</div>
+            						</div>
+            					</li>
+            					<li><a href="franchise.html">FRANCHISE</a></li>
+            					<li><a href="blog.html">BLOG</a></li>
+            					<li><a href="gallery.html">GALLERY</a></li>
+            					<li><a href="buy.html">BUY</a></li>
+            					<li><a href="career.html">CAREER</a></li>
+            					<li><a href="contact.html">CONTACT</a></li>
+            				</ul>
+            			</div>
+            			<i class="fa fa-bars" onclick="showMenu()"></i>
+            		</nav> -->
 
 		<div class="text-box">
 			<h1>VillaMart</h1>
@@ -73,27 +113,36 @@
 
 	<section class="about">
 		<h1>About VillaMart</h1>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero aliquam possimus
-			dignissimos,
-			saepe, aspernatur et non nam itaque, rem incidunt. Quasi voluptatibus a in quod omnis officiis
-			similique.
-			Voluptas?</p>
+		<p>VillaMart is introducing a PPAAS model, a tech-enabled direct-to-consumer marketplace for farm produce. The model uses advanced technology to ensure freshness, reduce wastage, and provide efficient sales tracking. It operates on a franchise basis, benefiting roadside vendors, kirana stores, farmers, FPOs, and SHGs. The model aims to transform traditional agriculture supply chains into a dynamic, technology-driven system.
+		</p>
+
+		<div class="row">
+			<div class="about-col">
+				<img src="images/doorstepdelivery.png">
+				<p>Door Step Delivery</p>
+			</div>
+			<div class="about-col">
+				<img src="https://placehold.co/50x50">
+				<p>Awarness Campaign</p>
+			</div>
+			<div class="about-col">
+				<img src="images/directly from framers.png">
+				<p>Directly from Farmers</p>
+			</div>
+		</div>
 
 		<div class="row">
 			<div class="about-col">
 				<img src="https://placehold.co/50x50">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum deleniti nesciunt mollitia
-					quasi?</p>
+				<p>Emphais on Physical Marketplace</p>
 			</div>
 			<div class="about-col">
 				<img src="https://placehold.co/50x50">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum deleniti nesciunt mollitia
-					quasi?</p>
+				<p>Light Asset Franchise Model</p>
 			</div>
 			<div class="about-col">
 				<img src="https://placehold.co/50x50">
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum deleniti nesciunt mollitia
-					quasi?</p>
+				<p>Competitors as Customers</p>
 			</div>
 		</div>
 
@@ -106,7 +155,7 @@
 
 	<section class="supported-by">
 		<h1>Supported by</h1>
-		<marquee>
+		<marquee scrollamount="30">
 			<div class="flex">
 				<img src="https://placehold.co/400" alt="birac">
 				<img src="https://placehold.co/400" alt="cttc">
@@ -167,7 +216,6 @@
 	<!-- ----------------------------------Award and Recognizatio End------------------------- -->
 
 
-
 	<!-- ------------------------------------Achivements Start---------------------------------------- -->
 
 	<section class="achievement">
@@ -188,19 +236,25 @@
 				</div>
 				<div class="achievement-col">
 					<h1>
-						<p><span id='0102'>12</span>+</p>
+						<p>
+							<span id='0102'>12</span>+
+						</p>
 					</h1>
 					<h3>FARMERS</h3>
 				</div>
 				<div class="achievement-col">
 					<h1>
-						<p><span id='0103'>12</span>%</p>
+						<p>
+							<span id='0103'>12</span>%
+						</p>
 					</h1>
 					<h3>PG/SHGs</h3>
 				</div>
 				<div class="achievement-col">
 					<h1>
-						<p><span id='0104'>12</span>+</p>
+						<p>
+							<span id='0104'>12</span>+
+						</p>
 					</h1>
 					<h3>MO</h3>
 				</div>
@@ -215,7 +269,6 @@
 				animate(text2, 0, 232, 7000);
 				animate(text3, 100, 25, 7000);
 				animate(text4, 100, 89, 7000);
-
 			</script>
 		</div>
 
@@ -223,8 +276,6 @@
 
 
 	<!-- ---------------------------------------Achivements End----------------------------------------------- -->
-
-
 
 
 	<!-- ---------------------------------Testimonials Start -------------------------- -->
@@ -311,17 +362,28 @@
 				<div class="footer-col">
 					<h4>follow us</h4>
 					<div class="social-links">
-						<a href="https://www.facebook.com/villamartindia/" target="_blank"><i
-								class="fab fa-facebook-f"></i></a>
-						<a href="https://twitter.com/villamartindia" target="_blank"><i class="fab fa-twitter"></i></a>
-						<a href="https://www.instagram.com/villamart.india/" target="_blank"><i
-								class="fab fa-instagram"></i></a>
-						<a href="https://in.linkedin.com/company/villamartindia" target="_blank"><i
-								class="fab fa-linkedin-in"></i></a>
+						<a href="https://www.facebook.com/villamartindia/" target="_blank">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a href="https://twitter.com/villamartindia" target="_blank">
+							<i class="fab fa-twitter"></i>
+						</a>
+						<a href="https://www.instagram.com/villamart.india/" target="_blank">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a href="https://in.linkedin.com/company/villamartindia" target="_blank">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
 					</div>
 				</div>
 			</div>
+			<!-- <hr style="background-color: rgb(150, 145, 145); height: 1px; border: 0; margin-top: 5px;"> -->
+			<div style="text-align: center; color: darkgrey;padding: 5px;">
+				<p style="font-size:x-small">Copyright 2024 © Villamart Pvt Ltd. All rights reserved.</p>
+			</div>
+
 		</div>
+
 	</footer>
 	<!-- ------------------------------Footer End------------------------ -->
 
