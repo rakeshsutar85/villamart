@@ -76,7 +76,7 @@
 .header {
   min-height: 75vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/heroimage.gif);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/hero-image.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -169,6 +169,7 @@ nav img {
 
 .dropdown:hover .dropdown-content {
   display: block;
+
 }
 
 .dropdown:hover .dropbtn {
@@ -576,7 +577,7 @@ ul {
 .sub-header {
   height: 40vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://placehold.co/600x400);
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/hero-image.jpg);
   background-position: center;
   background-size: cover;
   text-align: center;
