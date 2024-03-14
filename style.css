@@ -146,13 +146,17 @@ nav img {
 
 
 .dropdown-content {
-  align-content: center;
+  align-items: center;
   display: none;
-  position: absolute;
-  background-color: rgb(77, 67, 67);
-  min-width: 100px;
+  position: relative;
+  background-color: rgb(177, 161, 161);
+  width: 1000px;
+  height: 250px;
   box-shadow: 0px 8px 16px 0px rgba(184, 183, 183, 0.2);
   z-index: 1;
+  margin-left: -900%;
+  text-align: left;
+  margin-top: 0px;
 }
 
 .dropdown-content a {
@@ -164,12 +168,13 @@ nav img {
 }
 
 .dropdown-content a:hover {
-  background-color: #014017
+  background-color: #014017;
+  
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
-
+  position:absolute;
+  display: flex;
 }
 
 .dropdown:hover .dropbtn {
