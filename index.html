@@ -1,438 +1,491 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta name="viewport" content="width=device-width , initial-scale = 1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-        <link rel="stylesheet" href="style.css">
-        <script src="index.js"></script>
-        <title>VillaMart.com - Happy Farmers, Healthy Consumers</title>
-        <link rel="icon" type="image/png" href="/images/favicon.png">
-    </head>
+<head>
+    <meta name="viewport" content="width=device-width , initial-scale = 1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <title>VillaMart.com - Happy Farmers, Healthy Consumers</title>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+</head>
 
-    <body>
-        <!-- Popup overlay with content -->
-        <section>
-            <div id="popup-overlay" onclick="closePopup()">
-                <div id="popup-content">
-                    <div id="video-container">
-                        <video id="myVideo" autoplay controls>
-                            <source src="videos/hero-video.mp4" type="video/mp4">
-                            Add additional source elements for different video formats if needed -->
-                        </video>
-                    </div>
-                    <!-- <span id="close-button" onclick="closePopup()">x</span> -->
+<body background="images/background.png">
+    <!-- Popup overlay with content -->
+    <section>
+        <div id="popup-overlay" onclick="closePopup()">
+            <div id="popup-content">
+                <div id="video-container">
+                    <video id="myVideo" controls autoplay>
+                        <source src="videos/hero-video.mp4" type="video/mp4">
+                        Add additional source elements for different video formats if needed -->
+                    </video>
                 </div>
+                <!-- <span id="close-button" onclick="closePopup()">x</span> -->
             </div>
-        </section>
+        </div>
+    </section>
 
-        <div style="background: #014017; height: 80px; position: sticky; top: 0; z-index: 100;">
-            <nav>
-                <a href="index.html"><img src="images/villamart-logo.png" alt="logo"></a>
-                <div class="nav-links" id="navLinks">
-                    <i class="fa fa-times" onclick="hideMenu()"></i>
-                    <ul>
-                        <li>
-                            <a href="index.html">HOME</a>
-                        </li>
-                        <li>
-                            <div class="dropdown">
-                                <a>COMPANY</a>
-                                <div class="dropdown-content">
-                                    <div class="contact-col">
-                                        <a href="about.html" style="color: black; font-weight: bold;">About</a>
-                                        <p style="text-align: center;">Lorem ipsum dolor sit amet <br>
-                                            consectetur adipisicing
-                                            
-                                        </p>
-                                    </div>
-
-                                    <div class="contact-col">
-                                        <a href="team.html"style="color: black; font-weight: bold;">Team</a>
-                                        <p style="text-align: center;">Lorem ipsum dolor sit amet
-                                            <br>consectetur adipisicing
-                                            
-                                        </p>
-                                    </div>
-
-                                    <div class="contact-col">
-                                        <a href="company journey.html"style="color: black; font-weight: bold;">Journey</a>
-                                        <p style="text-align: center;">Lorem ipsum dolor sit amet
-                                            <br>consectetur adipisicing
-                                            
-                                        </p>
-                                    </div>
-
-									<div class="contact-col">
-                                        <a href="media.html"style="color: black; font-weight: bold;">Media</a>
-                                        <p style="text-align: center;">Lorem ipsum dolor sit amet
-                                            <br>consectetur adipisicing
-                                            
-                                        </p>
-                                    </div>
-
-									<div class="contact-col">
-                                        <a href="business_model.html"style="color: black; font-weight: bold;">Business Model</a>
-                                        <p style="text-align: center;">Lorem ipsum dolor sit amet
-                                            <br>consectetur adipisicing
-                                            
-                                        </p>
-                                    </div>
-
-									<div class="contact-col">
-                                        <a href="blog.html"style="color: black; font-weight: bold;">Blog</a>
-                                        <p style="text-align: center;">Lorem ipsum dolor sit amet
-                                            <br>consectetur adipisicing
-                                            
-                                        </p>
-                                    </div>
-									
-                                    
-                                    
-                                    
+    <div class="navbar">
+        <nav>
+            <a href="index.html"><img src="images/villamart-logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li>
+                        <a href="index.html">HOME</a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a>COMPANY</a>
+                            <div class="dropdown-content">
+                                <div class="contact-col">
+                                    <a href="about.html" style="color: black; font-weight: bold;">About</a>
+                                    <p style="text-align: center; font-size: small; height: 150px; width: 150px;">
+                                        Initiated with a purpose of establishing a sustainable marketplace for farmers
+                                        while benefiting consumers</p>
                                 </div>
+
+                                <div class="contact-col">
+                                    <a href="team.html" style="color: black; font-weight: bold;">Team</a>
+                                    <p style="text-align: center; font-size: small; height: 150px; width: 150px;">Highly
+                                        educated, self-motivated individuals with a grounded approach have embarked on a
+                                        mission</p>
+                                </div>
+
+                                <div class="contact-col">
+                                    <a href="company journey.html" style="color: black; font-weight: bold;">Journey</a>
+                                    <p style="text-align: center; font-size: small; height: 150px; width: 150px;">Since
+                                        2017, dedicated to innovating user-friendly technology for a sustainable
+                                        marketplace benefiting farmers</p>
+                                </div>
+
+                                <div class="contact-col" style="margin-top: 5px;">
+                                    <a href="gallery.html" style="color: black; font-weight: bold;">Gallery</a>
+                                    <p style="text-align: center; font-size: small; height: 150px; width: 150px;">We
+                                        operate with passion, joy, and celebration</p>
+                                </div>
+
+                                <div class="contact-col">
+                                    <a href="business_model.html" style="color: black; font-weight: bold;">Business
+                                        Model</a>
+                                    <p style="text-align: center; font-size: small;height: 150px; width: 150px;">A model
+                                        fostering growth and well-being for all stakeholders, promoting happiness and
+                                        health in society</p>
+                                </div>
+
+                                <div class="contact-col">
+                                    <a href="media.html" style="color: black; font-weight: bold;">Media</a>
+                                    <p style="text-align: center; font-size: small;height: 150px; width: 150px;">Join us
+                                        in spreading happiness. Learn more about us and become part of our mission!</p>
+                                </div>
+
+                                <div class="contact-col">
+                                    <a href="blog.html" style="color: black; font-weight: bold;">Blog</a>
+                                    <p style="text-align: center; font-size: small;height: 150px; width: 150px;">Gain
+                                        insights from diverse stakeholders</p>
+                                </div>
+
                             </div>
-                        </li>
-                        <li>
-                            <a href="franchise.html">FRANCHISE MODEL</a>
-                        </li>
-                        <li>
-                            <a href="https://www.villamart.in/" target="_blank">ONLINE ORDER</a>
-                        </li>
-                        <!-- <li><a href="gallery.html">GALLERY</a></li> -->
-                        <li>
-                            <a href="contact.html">CONTACT US</a>
-                        </li>
-                        <!-- <li><a href="career.html">CAREER</a></li>
-                                                                                                					<li><a href="contact.html">CONTACT</a></li> -->
-                    </ul>
-                </div>
-                <i class="fa fa-bars" onclick="showMenu()"></i>
-            </nav>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="franchise.html">FRANCHISE MODEL</a>
+                    </li>
+                    <li>
+                        <a href="https://www.villamart.in/" target="_blank">ONLINE ORDER</a>
+                    </li>
+                    <!-- <li><a href="gallery.html">GALLERY</a></li> -->
+                    <li>
+                        <a href="contact.html">CONTACT US</a>
+                    </li>
+                    <!-- <li><a href="career.html">CAREER</a></li>
+                                                                                                                        					<li><a href="contact.html">CONTACT</a></li> -->
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </div>
+
+    <!-- Header Section -->
+    <section class="header">
+        <!-- <nav>
+                                                            			<a href="index.html"><img src="images/villamart-logo.png" alt="logo"></a>
+                                                            			<div class="nav-links" id="navLinks">
+                                                            				<i class="fa fa-times" onclick="hideMenu()"></i>
+                                                            				<ul>
+                                                            					<li><a href="index.html">HOME</a></li>
+                                                            					<li>
+                                                            						<div class="dropdown">
+                                                            							<a>COMPANY</a>
+                                                            							<div class="dropdown-content">
+                                                            								<a href="about_us.html">About</a>
+                                                            								<a href="team.html">Team</a>
+                                                            								<a href="">Partners</a>
+                                                            							</div>
+                                                            						</div>
+                                                            					</li>
+                                                            					<li><a href="franchise.html">FRANCHISE</a></li>
+                                                            					<li><a href="blog.html">BLOG</a></li>
+                                                            					<li><a href="gallery.html">GALLERY</a></li>
+                                                            					<li><a href="buy.html">BUY</a></li>
+                                                            					<li><a href="career.html">CAREER</a></li>
+                                                            					<li><a href="contact.html">CONTACT</a></li>
+                                                            				</ul>
+                                                            			</div>
+                                                            			<i class="fa fa-bars" onclick="showMenu()"></i>
+                                                            		</nav> -->
+
+        <div class="text-box">
+            <h1>VillaMart</h1>
+            <p>
+                Happy Farmers, Healthy Consumers
+            </p>
+            <a href="contact.html" class="hero-btn">Contact Us</a>
+        </div>
+    </section>
+
+
+    <!-- ----------------------------About Us Start------------------------ -->
+
+    <section class="about">
+        <h1>About VillaMart</h1>
+        <p>VillaMart introduces a groundbreaking PPAAS (PhyGital Platform As A Service) model, reshaping the
+            agricultural landscape through a Tech-Enabled Direct-to-Consumer (D2C) Omni-channel marketplace for Farm
+            Produce.
+            Our seamlessly integrated mobile and static outlets, coupled with a sophisticated Procurement cum
+            Fulfillment Center (PFC), utilize advanced technology to ensure freshness, chemical-free produce, efficient
+            sales tracking, and pattern analysis, with a primary focus on reducing wastage.
+            Crucially, the PPAAS model operates on a franchise basis, extending its benefits to roadside vegetable
+            vendors, kirana stores, farmers, Farmer Producer Organizations (FPOs), and Self-Help Groups (SHGs).
+            This inclusive ecosystem aims to create a win-win situation for all stakeholders. The PPAAS model recognizes
+            the significance of a tactile shopping experience for farm products, delivering the same "touch & feel"
+            encounter to consumers, whether at their doorstep or within a convenient walking distance.
+
+        </p>
+
+        <div class="row">
+            <div class="about-col">
+                <img src="images/directly from framers.png">
+                <p>Direct from farmers</p>
+            </div>
+            <div class="about-col">
+                <img src="images/physiacal marketplace.png">
+                <p>Physical Marketplace</p>
+            </div>
+            <div class="about-col">
+                <img src="images/franchise.png">
+                <p>Franchise model</p>
+            </div>
+
         </div>
 
-        <!-- Header Section -->
-        <section
-            class="header">
-            <!-- <nav>
-                                                			<a href="index.html"><img src="images/villamart-logo.png" alt="logo"></a>
-                                                			<div class="nav-links" id="navLinks">
-                                                				<i class="fa fa-times" onclick="hideMenu()"></i>
-                                                				<ul>
-                                                					<li><a href="index.html">HOME</a></li>
-                                                					<li>
-                                                						<div class="dropdown">
-                                                							<a>COMPANY</a>
-                                                							<div class="dropdown-content">
-                                                								<a href="about_us.html">About</a>
-                                                								<a href="team.html">Team</a>
-                                                								<a href="">Partners</a>
-                                                							</div>
-                                                						</div>
-                                                					</li>
-                                                					<li><a href="franchise.html">FRANCHISE</a></li>
-                                                					<li><a href="blog.html">BLOG</a></li>
-                                                					<li><a href="gallery.html">GALLERY</a></li>
-                                                					<li><a href="buy.html">BUY</a></li>
-                                                					<li><a href="career.html">CAREER</a></li>
-                                                					<li><a href="contact.html">CONTACT</a></li>
-                                                				</ul>
-                                                			</div>
-                                                			<i class="fa fa-bars" onclick="showMenu()"></i>
-                                                		</nav> -->
+        <div class="row">
 
-            <div class="text-box">
-                <h1>VillaMart</h1>
-                <p>
-                    Happy Farmers, Healthy Consumers
+            <div class="about-col">
+                <img src="images/sourceing info.png">
+                <p>Sourcing Information</p>
+            </div>
+            <div class="about-col">
+                <img src="images/doorstepdelivery.png">
+                <p>Doorstep Delivery
                 </p>
-                <a href="contact.html" class="hero-btn">Contact Us</a>
             </div>
-        </section>
+            <div class="about-col">
+                <img src="images/cleaning.png">
+                <p>Cleaning of chemicals/pesticides</p>
+            </div>
+        </div>
+
+    </section>
 
 
-        <!-- ----------------------------About Us Start------------------------ -->
+    <!-- --------------------------------About Us End--------------------------- -->
 
-        <section class="about">
-            <h1>About VillaMart</h1>
-            <p>VillaMart is introducing a PPAAS model, a tech-enabled direct-to-consumer marketplace for farm produce. The model uses advanced technology to ensure freshness, reduce wastage, and provide efficient sales tracking. It operates on a franchise basis, benefiting roadside vendors, kirana stores, farmers, FPOs, and SHGs. The model aims to transform traditional agriculture supply chains into a dynamic, technology-driven system.
-            </p>
+    <!-- -----------------------Supported By Start----------------------- -->
 
+    <section class="supported-by">
+        <h1>Supported by</h1>
+        <!-- <marquee behavior="scroll" scrollamount="30"> -->
+            <div class="flex">
+                <img src="images/birac.png" alt="birac">
+                <img src="images/villagro.png" alt="cttc">
+                <img src="images/kiit-tbi.png" alt="kiit">
+                <img src="images/sbi.png" alt="sbi">
+                <img src="images/siic-iik.png" alt="siic">
+                <img src="images/startup-india.png" alt="Startup India">
+                <img src="images/startup-odisha.png" alt="Startup Odisha">
+                <img src="images/tata-social-enterprise.png" alt="TATA">
+                <img src="images/birac.png" alt="birac">
+                <img src="images/villagro.png" alt="cttc">
+                <img src="images/kiit-tbi.png" alt="kiit">
+                <img src="images/sbi.png" alt="sbi">
+                <img src="images/siic-iik.png" alt="siic">
+                <img src="images/startup-india.png" alt="Startup India">
+                <img src="images/startup-odisha.png" alt="Startup Odisha">
+                <img src="images/tata-social-enterprise.png" alt="TATA">
+                <img src="images/birac.png" alt="birac">
+                <img src="images/villagro.png" alt="cttc">
+                <img src="images/kiit-tbi.png" alt="kiit">
+                <img src="images/sbi.png" alt="sbi">
+                <img src="images/siic-iik.png" alt="siic">
+                <img src="images/startup-india.png" alt="Startup India">
+                <img src="images/startup-odisha.png" alt="Startup Odisha">
+                <img src="images/tata-social-enterprise.png" alt="TATA">
+            </div>
+        <!-- </marquee> -->
+
+
+    </section>
+
+    <!-- ------------------------------Supported by End------------------------------ -->
+
+    <!-- ----------------------------------Award and Recognizatio Start------------------------- -->
+
+    <section class="award">
+        <h1>Award & Recognition</h1>
+        <p>Throughout our journey, spanning the past few years, VillaMart has been honored with numerous awards and
+            recognitions at various levels, ranging from the village to the state, central, and even international
+            stages. These accolades serve as testament to our dedication and commitment to excellence in all aspects of
+            our operations.
+            We are profoundly grateful for the remarkable opportunities and recognition bestowed upon us, and we remain
+            steadfast in our mission to deliver nothing short of excellence. Your continued support and trust in
+            VillaMart inspire us to strive for greater heights. Thank you for being a part of our journey.
+        </p>
+
+        <div class="row">
+            
+            <div class="award-col">
+                <img src="images/future_food_fellowship.png">
+                <h3>Future Food Fellowship</h3>
+                <p>We are thrilled to announce that VillaMart has been chosen as one of the 20 international organizations for the prestigious "Future Food Fellow" program by the DO School in Germany. This incredible opportunity has provided us with mentoring support from internationally renowned individuals and invaluable interactions with global change-makers. We are deeply grateful for this honor and remain committed to our mission of driving positive change in the world of food. Thank you for your continued support and belief in VillaMart.</p>
+            </div>
+
+            <div class="award-col">
+                <img src="images/nsa.png">
+                <h3>Finalist at National Startup Award</h3>
+                <p style="text-align: center;">VillaMart proudly stood as a finalist in the esteemed National Startup Awards 2021, granting us the privilege of engaging with the honorable Prime Minister, Shri Narendra Modi. Additionally, we received invaluable handholding and mentoring support from DIPP for a duration of one year. These experiences have significantly enriched our journey, reinforcing our commitment to excellence in all endeavors. We extend our heartfelt gratitude for the unwavering support and trust in VillaMart.
+                </p>
+            </div>
+
+            <div class="award-col">
+                <img src="images/tata_social_enterprise.png">
+                <h3>TATA Social Enterprise Challenge</h3>
+                <p>VillaMart achieved recognition as one of the top 10 finalists in the Tata Social Enterprise Challenge 2018, organized by the esteemed Tata Group in collaboration with IIM Calcutta. This honor underscores our commitment to social entrepreneurship and innovation. We are grateful for the opportunity and remain dedicated to making a positive impact in society. Thank you for your continued support of VillaMart.
+                </p>
+            </div>
+
+            <div class="award-col">
+                <img src="images/your_story.png">
+                <h3>Your Story</h3>
+                <p>We are delighted to be acknowledged as one of the top 10 startups by “Your Story” making a difference during the challenging times of the COVID-19 pandemic, when much of the world was facing shutdowns and uncertainties. Your recognition of our efforts truly motivates us. Thank you for featuring us. 
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <!-- ----------------------------------Award and Recognizatio End------------------------- -->
+
+
+    <!-- ------------------------------------Achivements Start---------------------------------------- -->
+
+    <section class="achievement">
+        <h1>Our Achievement</h1>
+        <p>Through a journey marked by highs and lows, we've been fortunate to forge connections with numerous farmers, consumers, B2B vendors, and suppliers, a privilege for which we are profoundly grateful</p>
+
+        <div class="achievement-row">
             <div class="row">
-                <div class="about-col">
-                    <img src="images/physiacal marketplace.png">
-                    <p>Physical Marketplace</p>
+                <div class="achievement-col">
+                    <h1>
+                        <p>
+                            <span id='0101'>3000</span>+
+                        </p>
+                    </h1>
+                    <h3>FARMERS</h3>
                 </div>
-                <div class="about-col">
-                    <img src="images/franchise.png">
-                    <p>Franchise model</p>
+                <div class="achievement-col">
+                    <h1>
+                        <p>
+                            <span id='0102'>20</span>+
+                        </p>
+                    </h1>
+                    <h3>PG/SHGs</h3>
                 </div>
-                <div class="about-col">
-                    <img src="images/doorstepdelivery.png">
-                    <p>Doorstep Delivery
-                    </p>
+                <div class="achievement-col">
+                    <h1>
+                        <p>
+                            <span id='0103'>60</span>+
+                        </p>
+                    </h1>
+                    <h3>SHGs</h3>
+                </div>
+                <div class="achievement-col">
+                    <h1>
+                        <p>
+                            <span id='0104'>150</span>+
+                        </p>
+                    </h1>
+                    <h3>B2B Units</h3>
+                </div>
+                <div class="achievement-col">
+                    <h1>
+                        <p>
+                            <span id='0105'>6000</span>+
+                        </p>
+                    </h1>
+                    <h3>Direct Consumers</h3>
+                </div>
+                <div class="achievement-col">
+                    <h1>
+                        <p>
+                            <span id='0106'>30</span>+
+                        </p>
+                    </h1>
+                    <h3>Employment</h3>
+                </div>
+                
+            </div>
+            <script>
+                let text1 = document.getElementById('0101');
+                let text2 = document.getElementById('0102');
+                let text3 = document.getElementById('0103');
+                let text4 = document.getElementById('0104');
+                let text5 = document.getElementById('0105');
+                let text6 = document.getElementById('0106');
+
+                animate(text1, 0, 3000, 7000);
+                animate(text2, 0, 20, 7000);
+                animate(text3, 100, 60, 7000);
+                animate(text4, 100, 150, 7000);
+                animate(text5, 100, 6000, 7000);
+                animate(text6, 100, 30, 7000);
+            </script>
+        </div>
+
+    </section>
+
+
+    <!-- ---------------------------------------Achivements End----------------------------------------------- -->
+
+
+    <!-- ---------------------------------Testimonials Start -------------------------- -->
+    <section class="testimonials">
+        <h1>What People Says</h1>
+        <p>Ultimately, winning over people's hearts is the true victory in business.
+        </p>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="images/profile" alt="user1">
+                <div>
+                    <p>VillaMart (Gaon Haat) takes my vegetables without any bargain and I am happy being associated with it.</p>
+                    <h3>Basanti Nayak</h3>
+                    <h6>Farmer</h6>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
                 </div>
             </div>
+            <div class="testimonial-col">
+                <img src="images/profile" alt="user2">
+                <div>
+                    <p>I am a regular customer of VillaMart, they are so punctual in their service, the sales people are so well behaved, vegetables are always fresh, Dal and rice are also good quality which are difficult to get in the market. After all, their price is so good, same or even less than the market price!</p>
+                    <h3>Sonali Rout</h3>
+                    <h6>Housewife</h6>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half"></i>
+                </div>
+            </div>
+            <!-- <div class="testimonial-col">
+                <img src="images/profile.jpg" alt="user2">
+                <div>
+                    <p>I am happy to get all the fresh vegetables at my doorstep, and most importantly VillaMart brings Desi variety vegetables which have better taste compared to the hybrid variety available in the market. </p>
+                    <h3>Sukanti Behara</h3>
+                    <h6>Housewife</h6>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star-half"></i>
+                </div>
+            </div> -->
+        </div>
+    </section>
 
+    <!-- ---------------------------------Testimonials End -------------------------- -->
+
+
+
+    
+
+    <!-- <--------------------Footer Start---------------------------- -->
+    <footer class="footer">
+        <div class="container">
             <div class="row">
-                <div class="about-col">
-                    <img src="images/directly from framers.png">
-                    <p>Direct from farmers</p>
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">career</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">franchise</a></li>
+                    </ul>
                 </div>
-                <div class="about-col">
-                    <img src="images/sourceing info.jpeg">
-                    <p>Sourcing Information</p>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">buy</a></li>
+                        <li><a href="#">contact us</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">business model</a></li>
+                    </ul>
                 </div>
-                <div class="about-col">
-                    <img src="images/cleaning.jpeg">
-                    <p>Cleaning of chemicals/pesticides</p>
+                <div class="footer-col">
+                    <h4>online</h4>
+                    <ul>
+                        <li><a href="#">people</a></li>
+                        <li><a href="#">farmers</a></li>
+                        <li><a href="#">shop</a></li>
+
+                    </ul>
                 </div>
-            </div>
-
-        </section>
-
-
-        <!-- --------------------------------About Us End--------------------------- -->
-
-        <!-- -----------------------Supported By Start----------------------- -->
-
-        <section class="supported-by">
-            <h1>Supported by</h1>
-            <marquee scrollamount="30">
-                <div class="flex">
-                    <img src="images/birac.png" alt="birac">
-                    <img src="images/villagro.png" alt="cttc">
-                    <img src="images/kiit-tbi.png" alt="kiit">
-                    <img src="images/sbi.png" alt="sbi">
-                    <img src="images/siic-iik.png" alt="siic">
-                    <img src="images/startup-india.png" alt="Startup India">
-                    <img src="images/startup-odisha.png" alt="Startup Odisha">
-                    <img src="images/tata-social-enterprise.png" alt="TATA">
-                </div>
-            </marquee>
-
-        </section>
-
-        <!-- ------------------------------Supported by End------------------------------ -->
-
-        <!-- ----------------------------------Award and Recognizatio Start------------------------- -->
-
-        <section class="award">
-            <h1>Award & Recognition</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero aliquam possimus
-                                                			dignissimos,
-                                                			saepe, aspernatur et non nam itaque, rem incidunt. Quasi voluptatibus a in quod omnis officiis
-                                                			similique.
-                                                			Voluptas?</p>
-
-            <div class="row">
-                <div class="award-col">
-                    <img src="images/nsa.jpeg">
-                    <h3>Finalist at National Startup Award 2021</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum deleniti nesciunt mollitia
-                                                                        					quasi? Unde
-                                                                        					illo recusandae aperiam? Cumque, modi. Delectus non nemo voluptatum enim expedita
-                                                                        					accusantium fuga?
-                                                                        					Quam, eaque voluptatem.</p>
-                </div>
-                <div class="award-col">
-                    <img src="images/future_food_fellowship.png">
-                    <h3>Future Food Fellowship</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum deleniti nesciunt mollitia
-                                                                        					quasi? Unde
-                                                                        					illo recusandae aperiam? Cumque, modi. Delectus non nemo voluptatum enim expedita
-                                                                        					accusantium fuga?
-                                                                        					Quam, eaque voluptatem.</p>
-                </div>
-                <div class="award-col">
-                    <img src="images/tata-social-enterprise.png">
-                    <h3>TATA Social Enterprise Challenge 2021</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum deleniti nesciunt mollitia
-                                                                        					quasi? Unde
-                                                                        					illo recusandae aperiam? Cumque, modi. Delectus non nemo voluptatum enim expedita
-                                                                        					accusantium fuga?
-                                                                        					Quam, eaque voluptatem.</p>
-                </div>
-            </div>
-
-        </section>
-        <!-- ----------------------------------Award and Recognizatio End------------------------- -->
-
-
-        <!-- ------------------------------------Achivements Start---------------------------------------- -->
-
-        <section class="achievement">
-            <h1>Our Achievement</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia ducimus asperiores maxime
-                                                			quasi corrupti
-                                                			nemo et exercitationem ex, dolore nihil doloremque? Maiores error odio architecto et
-                                                			reprehenderit
-                                                			accusantium sapiente in.</p>
-
-            <div class="achievement-row">
-                <div class="row">
-                    <div class="achievement-col">
-                        <h1>
-                            <p id='0101'>0</p>
-                        </h1>
-                        <h3>CONSUMERS</h3>
-                    </div>
-                    <div class="achievement-col">
-                        <h1>
-                            <p>
-                                <span id='0102'>12</span>+
-                            </p>
-                        </h1>
-                        <h3>FARMERS</h3>
-                    </div>
-                    <div class="achievement-col">
-                        <h1>
-                            <p>
-                                <span id='0103'>12</span>%
-                            </p>
-                        </h1>
-                        <h3>PG/SHGs</h3>
-                    </div>
-                    <div class="achievement-col">
-                        <h1>
-                            <p>
-                                <span id='0104'>12</span>+
-                            </p>
-                        </h1>
-                        <h3>MO</h3>
-                    </div>
-                </div>
-                <script>
-                    let text1 = document.getElementById('0101');
-                    let text2 = document.getElementById('0102');
-                    let text3 = document.getElementById('0103');
-                    let text4 = document.getElementById('0104');
-
-                    animate(text1, 0, 511, 7000);
-                    animate(text2, 0, 232, 7000);
-                    animate(text3, 100, 25, 7000);
-                    animate(text4, 100, 89, 7000);
-                </script>
-            </div>
-
-        </section>
-
-
-        <!-- ---------------------------------------Achivements End----------------------------------------------- -->
-
-
-        <!-- ---------------------------------Testimonials Start -------------------------- -->
-        <section class="testimonials">
-            <h1>What People Says</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, id inventore ea assumenda
-                                                			voluptatibus
-                                                			impedit, ipsa fuga debitis sit possimus, quasi alias error neque molestiae veniam corporis modi
-                                                			dolor
-                                                			dolorem!</p>
-            <div class="row">
-                <div class="testimonial-col">
-                    <img src="images/profile.jpg" alt="user1">
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, consectetur! Labore,
-                                                                                    						libero animi
-                                                                                    						omnis neque consequatur incidunt. Cumque aliquid nulla dolor incidunt reiciendis!
-                                                                                    						Accusamus
-                                                                                    						labore eos enim dolorum voluptatibus pariatur.</p>
-                        <h3>Person Name</h3>
-                        <h6>Farmer</h6>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-                <div class="testimonial-col">
-                    <img src="images/profile.jpg" alt="user2">
-                    <div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, consectetur! Labore,
-                                                                                    						libero animi
-                                                                                    						omnis neque consequatur incidunt. Cumque aliquid nulla dolor incidunt reiciendis!
-                                                                                    						Accusamus
-                                                                                    						labore eos enim dolorum voluptatibus pariatur.</p>
-                        <h3>Person Name</h3>
-                        <h6>Customer</h6>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star-half"></i>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/villamartindia/" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/villamartindia" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/villamart.india/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://in.linkedin.com/company/villamartindia" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- ---------------------------------Testimonials End -------------------------- -->
-
-
-        <!-- <--------------------Footer Start---------------------------- -->
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col">
-                        <h4>company</h4>
-                        <ul>
-                            <li><a href="#">about us</a></li>
-                            <li><a href="#">career</a></li>
-                            <li><a href="#">privacy policy</a></li>
-                            <li><a href="#">franchise</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>get help</h4>
-                        <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">buy</a></li>
-                            <li><a href="#">contact us</a></li>
-                            <li><a href="#">blog</a></li>
-                            <li><a href="#">business model</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>online</h4>
-                        <ul>
-                            <li><a href="#">people</a></li>
-                            <li><a href="#">farmers</a></li>
-                            <li><a href="#">shop</a></li>
-
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>follow us</h4>
-                        <div class="social-links">
-                            <a href="https://www.facebook.com/villamartindia/" target="_blank">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="https://twitter.com/villamartindia" target="_blank">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="https://www.instagram.com/villamart.india/" target="_blank">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://in.linkedin.com/company/villamartindia" target="_blank">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- <hr style="background-color: rgb(150, 145, 145); height: 1px; border: 0; margin-top: 5px;"> -->
-                <div style="text-align: center; color: darkgrey;padding: 5px;">
-                    <p style="font-size:x-small">Copyright 2024 © Villamart Pvt Ltd. All rights reserved.</p>
-                </div>
-
+            <!-- <hr style="background-color: rgb(150, 145, 145); height: 1px; border: 0; margin-top: 5px;"> -->
+            <div style="text-align: center; color: darkgrey;padding: 5px;">
+                <p style="font-size:x-small">Copyright 2024 © Villamart Pvt Ltd. All rights reserved.</p>
             </div>
 
-        </footer>
-        <!-- ------------------------------Footer End------------------------ -->
+        </div>
 
-    </body>
+    </footer>
+    <!-- ------------------------------Footer End------------------------ -->
+
+</body>
 
 </html>

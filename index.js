@@ -1,5 +1,8 @@
 function openPopup() {
     document.getElementById('popup-overlay').style.display = 'block';
+    let vid = document.getElementById("myVideo");
+    vid.volume=0.2;
+    
 }
 
 // Function to close the popup
