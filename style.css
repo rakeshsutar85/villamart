@@ -41,6 +41,10 @@
   background: transparent;
 }
 
+.video-close:hover{
+  cursor: pointer;
+}
+
 /* Style for the video container */
 #video-container {
   width: 80%;
@@ -76,7 +80,7 @@
   min-height: 75vh;
   width: 100%;
   /* background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/hero-image.jpeg); */
-  background-image: linear-gradient(transparent, transparent), url(images/hero-image.jpeg);
+  background-image: linear-gradient(transparent, transparent), url(images/hero-image.png);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -137,6 +141,10 @@ nav img {
 
 }
 
+.nav-links ul li a:hover{
+  color: orange;
+}
+
 
 .dropbtn {
   background-color: #014017;
@@ -158,13 +166,14 @@ nav img {
   display: none;
   position: relative;
   background-color: rgb(177, 161, 161);
-  width: 1050px;
-  height: 230px;
+  width: 800px;
+  height: 160px;
   box-shadow: 0px 8px 16px 0px rgba(184, 183, 183, 0.2);
   z-index: 1;
   margin-left: -900%;
   text-align: left;
   margin-top: 0px;
+  padding: 10px;
 }
 
 .dropdown-content a {
@@ -177,7 +186,7 @@ nav img {
 
 .dropdown-content a:hover {
   background-color: #014017;
-
+  
 }
 
 .dropdown:hover .dropdown-content {
@@ -440,6 +449,7 @@ h1 {
   
   text-align: center;
   color: black;
+  margin-top: 20px;
 }
 
 .achievement-col h3 {
@@ -463,6 +473,7 @@ h1 {
   margin: auto;
   padding-top: 50px;
   text-align: center;
+  
 }
 
 .testimonial-col {
@@ -507,6 +518,85 @@ h1 {
     margin-right: 15px;
   }
 }
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #e6e9e5;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  position: absolute;
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #014017;
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: transparent;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: #014017; font-weight: bold;}
 
 
 
@@ -570,7 +660,7 @@ ul {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: #e91e63;
+  background-color: orange;
   height: 2px;
   box-sizing: border-box;
   width: 50px;

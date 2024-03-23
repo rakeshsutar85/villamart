@@ -1,8 +1,9 @@
 function openPopup() {
     document.getElementById('popup-overlay').style.display = 'block';
-    let vid = document.getElementById("myVideo");
-    vid.volume=0.2;
-    
+    // let vid = document.getElementById("myVideo");
+    // vid.volume=0.2;
+    document.getElementById("video-container").focus();
+
 }
 
 // Function to close the popup
@@ -68,3 +69,16 @@ function animate(obj, initVal, lastVal, duration) {
 
 
 //Achivement End
+
+function videoOutsideClose(){
+    window.addEventListener('click', function (e) {
+
+        if (document.getElementById("popup-content").contains(e.target)) {
+            //alert("Please click outside the video");
+            
+        } else {
+            closePopup();
+            //alert("Clicked outside Box");
+        }
+    })
+}
